@@ -1,0 +1,61 @@
+/*Identify hours when the trips start. */
+CREATE TABLE IF NOT EXISTS viz_data AS
+(SELECT 
+ride_id,
+rideable_type,
+user_type,
+day_of_week,
+month,
+date_part('hour', start_time::TIMESTAMP) AS hour,
+duration_mins,
+start_time,
+end_time,
+start_station,
+start_station_id,
+end_station,
+end_station_id,
+start_lat,
+start_lng,
+end_lat,
+end_lng
+FROM final_trips_2023);
+
+SELECT * FROM viz_data
+LIMIT 20;
+
+/*Add new columns for seasons and time of day.*/
+ALTER TABLE viz_data
+ADD season VARCHAR(50),
+ADD time_of_day VARCHAR(50);
+
+UPDATE viz_data
+SET season = 'Spring'
+WHERE month IN ('Mar', 'Apr', 'May');
+
+UPDATE viz_data
+SET season = 'Summer'
+WHERE month IN ('Jun', 'Jul', 'Aug');
+
+UPDATE viz_data
+SET season = 'Fall'
+WHERE month IN ('Sep', 'Oct', 'Nov');
+
+UPDATE viz_data
+SET season = 'Winter'
+WHERE month IN ('Dec', 'Jan', 'Feb');
+
+UPDATE viz_data
+SET time_of_day = 'Morning'
+WHERE hour IN (6,7,8,9,10,11);
+
+UPDATE viz_data
+SET time_of_day = 'Afternoon'
+WHERE hour IN (12,13,14,15,16);
+
+UPDATE viz_data
+SET time_of_day = 'Evening'
+WHERE hour IN (17,18,19,20,21);
+
+UPDATE viz_data
+SET time_of_day = 'Night'
+WHERE hour IN (22,23,0,1,2,3,4,5);
