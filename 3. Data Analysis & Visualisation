@@ -1,3 +1,20 @@
+/* Analyse the data to find insights.
+First, find the average duration by member type. */
+
+SELECT
+	user_type, 
+	ROUND(AVG(duration_mins),2) AS average_trip,
+	COUNT(ride_id) AS num_of_trips
+FROM final_trips_2023
+GROUP BY user_type;
+
+/* Check for breakdown by ride type. */
+
+SELECT month, user_type, COUNT(ride_id) AS total_trips
+FROM final_trips_2023
+GROUP BY month, user_type
+ORDER BY user_type;
+
 /*Identify hours when the trips start. */
 CREATE TABLE IF NOT EXISTS viz_data AS
 (SELECT 
