@@ -1,3 +1,185 @@
+/* Create tables for each month's CSV file to be imported */
+
+CREATE TABLE trips_2023_01
+(ride_id varchar(50), 
+ rideable_type varchar(50), 
+ start_time timestamp, 
+ end_time timestamp, 
+ start_station_name varchar(100), 
+ start_station_id varchar(50), 
+ end_station_name varchar(100), 
+ end_station_id varchar(50), 
+ start_lat varchar(50), 
+ start_lng varchar(50), 
+ end_lat varchar(50), 
+ end_lng varchar(50), 
+ user_type varchar(50));
+
+CREATE TABLE trips_2023_02
+(ride_id varchar(50), 
+ rideable_type varchar(50), 
+ start_time timestamp, 
+ end_time timestamp, 
+ start_station_name varchar(100), 
+ start_station_id varchar(50), 
+ end_station_name varchar(100), 
+ end_station_id varchar(50), 
+ start_lat varchar(50), 
+ start_lng varchar(50), 
+ end_lat varchar(50), 
+ end_lng varchar(50), 
+ user_type varchar(50));
+
+CREATE TABLE trips_2023_03
+(ride_id varchar(50), 
+ rideable_type varchar(50), 
+ start_time timestamp, 
+ end_time timestamp, 
+ start_station_name varchar(100), 
+ start_station_id varchar(50), 
+ end_station_name varchar(100), 
+ end_station_id varchar(50), 
+ start_lat varchar(50), 
+ start_lng varchar(50), 
+ end_lat varchar(50), 
+ end_lng varchar(50), 
+ user_type varchar(50));
+
+CREATE TABLE trips_2023_04
+(ride_id varchar(50), 
+ rideable_type varchar(50), 
+ start_time timestamp, 
+ end_time timestamp, 
+ start_station_name varchar(100), 
+ start_station_id varchar(50), 
+ end_station_name varchar(100), 
+ end_station_id varchar(50), 
+ start_lat varchar(50), 
+ start_lng varchar(50), 
+ end_lat varchar(50), 
+ end_lng varchar(50), 
+ user_type varchar(50));
+
+CREATE TABLE trips_2023_05
+(ride_id varchar(50), 
+ rideable_type varchar(50), 
+ start_time timestamp, 
+ end_time timestamp, 
+ start_station_name varchar(100), 
+ start_station_id varchar(50), 
+ end_station_name varchar(100), 
+ end_station_id varchar(50), 
+ start_lat varchar(50), 
+ start_lng varchar(50), 
+ end_lat varchar(50), 
+ end_lng varchar(50), 
+ user_type varchar(50));
+
+CREATE TABLE trips_2023_06
+(ride_id varchar(50), 
+ rideable_type varchar(50), 
+ start_time timestamp, 
+ end_time timestamp, 
+ start_station_name varchar(100), 
+ start_station_id varchar(50), 
+ end_station_name varchar(100), 
+ end_station_id varchar(50), 
+ start_lat varchar(50), 
+ start_lng varchar(50), 
+ end_lat varchar(50), 
+ end_lng varchar(50), 
+ user_type varchar(50));
+
+CREATE TABLE trips_2023_07
+(ride_id varchar(50), 
+ rideable_type varchar(50), 
+ start_time timestamp, 
+ end_time timestamp, 
+ start_station_name varchar(100), 
+ start_station_id varchar(50), 
+ end_station_name varchar(100), 
+ end_station_id varchar(50), 
+ start_lat varchar(50), 
+ start_lng varchar(50), 
+ end_lat varchar(50), 
+ end_lng varchar(50), 
+ user_type varchar(50));
+
+CREATE TABLE trips_2023_08
+(ride_id varchar(50), 
+ rideable_type varchar(50), 
+ start_time timestamp, 
+ end_time timestamp, 
+ start_station_name varchar(100), 
+ start_station_id varchar(50), 
+ end_station_name varchar(100), 
+ end_station_id varchar(50), 
+ start_lat varchar(50), 
+ start_lng varchar(50), 
+ end_lat varchar(50), 
+ end_lng varchar(50), 
+ user_type varchar(50));
+
+CREATE TABLE trips_2023_09
+(ride_id varchar(50), 
+ rideable_type varchar(50), 
+ start_time timestamp, 
+ end_time timestamp, 
+ start_station_name varchar(100), 
+ start_station_id varchar(50), 
+ end_station_name varchar(100), 
+ end_station_id varchar(50), 
+ start_lat varchar(50), 
+ start_lng varchar(50), 
+ end_lat varchar(50), 
+ end_lng varchar(50), 
+ user_type varchar(50));
+
+CREATE TABLE trips_2023_10
+(ride_id varchar(50), 
+ rideable_type varchar(50), 
+ start_time timestamp, 
+ end_time timestamp, 
+ start_station_name varchar(100), 
+ start_station_id varchar(50), 
+ end_station_name varchar(100), 
+ end_station_id varchar(50), 
+ start_lat varchar(50), 
+ start_lng varchar(50), 
+ end_lat varchar(50), 
+ end_lng varchar(50), 
+ user_type varchar(50));
+
+CREATE TABLE trips_2023_11
+(ride_id varchar(50), 
+ rideable_type varchar(50), 
+ start_time timestamp, 
+ end_time timestamp, 
+ start_station_name varchar(100), 
+ start_station_id varchar(50), 
+ end_station_name varchar(100), 
+ end_station_id varchar(50), 
+ start_lat varchar(50), 
+ start_lng varchar(50), 
+ end_lat varchar(50), 
+ end_lng varchar(50), 
+ user_type varchar(50));
+
+CREATE TABLE trips_2023_12
+(ride_id varchar(50), 
+ rideable_type varchar(50), 
+ start_time timestamp, 
+ end_time timestamp, 
+ start_station_name varchar(100), 
+ start_station_id varchar(50), 
+ end_station_name varchar(100), 
+ end_station_id varchar(50), 
+ start_lat varchar(50), 
+ start_lng varchar(50), 
+ end_lat varchar(50), 
+ end_lng varchar(50), 
+ user_type varchar(50));
+
 /* Combine all the 12 monthly tables into one table for the 
 year's data consisting of all the trips from
 2023-01-01 to 2023-12-31 */
