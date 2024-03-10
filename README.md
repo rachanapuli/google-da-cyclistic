@@ -8,8 +8,8 @@ As a junior data analyst on the marketing team at Cyclistic, a fictional bike-sh
 The data used for the analysis ranges from trips made in January 2023 to December 2023 i.e. 12 months. The source data can be found [here](https://divvy-tripdata.s3.amazonaws.com/index.html).
 
 ## Tools Used
-- PostgreSQL
-- Tableau
+- PostgreSQL for data cleaning, manipulation and aggregation
+- Tableau for data visualisation
 
 ## Process
 ### 1. Data Combining
@@ -43,11 +43,11 @@ The months were categorised into seasons and the hours were categorised as time 
 
 The table was prepared for visualisation and imported into Tableau. The data types were checked to ensure the data was accurate before creating a dashboard.
 
-I started by creating charts for user trends across hour of the day, day of the week and month with usage for both members and casual riders highlighted separately.
+I started by creating charts for user trends across hour of the day, day of the week and month with usage for both members and casual riders highlighted separately. And finally, a [dashboard](https://public.tableau.com/views/GoogleDACapstone_17087127278210/Dashboard1?:language=en-US&:sid=&:display_count=n&:origin=viz_share_link) with the relavant information was created.
 
 ## Insights
 
-- From the charts, we notice that members take more trips during the week and less on the weekends while the converse is true for casual riders. The average ride duration for the members remain steady across the week but it increases significantly over the weekend.
+- From the dashboard, we notice that members take more trips during the week and less on the weekends while the converse is true for casual riders. The average ride duration for the members remain steady across the week but it increases significantly over the weekend.
 
 - Most trips by members start around the morning hours and then again around the evening hours, indicating usage for typical office hours commute. Most trips by casual riders start around late afternoon and evening. This indicates more recreational use. The average ride duration for members remains steady but for casual riders it peaks around late in the morning and early afternoon.
 
